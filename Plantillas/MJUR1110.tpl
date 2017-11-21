@@ -20,11 +20,23 @@
     <div class="container text-center">
         <div class="container-fluid">
             <form action="MJUR1110.php" method="post">
-               <div class= "form-group">
-                  
-               </div>
-               <button type="submit" class="btn btn-default"  name="Boton1" value="IniciarSesion" title="Iniciar sesión">Iniciar Sesión</button>
+                <div class= "form-group">
+                   <p>Nombre del Alumno</p>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Cursos disponibles<span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CURSO 1</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CURSO 2</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CURSO 3</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CURSO 4</a></li>    
+                        </ul>
+                </div>
+                <button type="submit" class="btn btn-default"  name="Boton1" value="Matricularse" title="Matricularse">Matricularse</button>
             </form>
         </div>
     </div>
+    <footer>
+        <h5>UCSM</h5>
+    </footer>
 </body>
