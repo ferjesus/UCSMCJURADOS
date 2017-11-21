@@ -27,10 +27,10 @@ and open the template in the editor.
             <h2>Matricularse en cursos por Jurado</h2>      
             <a href="MJUR1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
         </div>
-    </center> 
-
+    </center>
+    <footer>
+        <h1>Universidad Católica Santa María</h1>
+    </footer>
 </body>
-<footer>
-    <h1>Universidad Católica Santa María</h1>
-</footer>
+
 </html>
