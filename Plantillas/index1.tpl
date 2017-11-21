@@ -15,24 +15,22 @@ and open the template in the editor.
     <script src="JS/java.js"></script>
 </head>
 <body>
- <header>
-      <div id="header"></div>
-   </header>    
-    <body>
-      <center>
-         <div class="col-lg-12 col-md-12 col-sm-12">
+    <header>
+        <div id="header"></div>
+    </header>    
+    <center>
+        <div class="col-lg-12 col-md-12 col-sm-12">
              <BR>
             <h1 class="titulos-pagina">CURSOS POR JURADO UCSM</h1>
-         </div>
-           <div class="container">
-             <h2>Matricularse en cursos por Jurado</h2>      
-             <a href="MJUR1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
-          </div>
-      </center> 
-    
-    <footer>
-        <h1>Universidad Católica Santa María</h1>
-    </footer>
-</body>
+        </div>
+        <div class="container">
+            <h2>Matricularse en cursos por Jurado</h2>      
+            <a href="MJUR1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
+        </div>
+    </center> 
 
+</body>
+<footer>
+    <h1>Universidad Católica Santa María</h1>
+</footer>
 </html>
