@@ -15,7 +15,7 @@ class CSql {
 
    public function omConnect() {
       //$lcConStr = "host=localhost dbname=UCSMXJURADOS port=5432 user=postgres password=root";
-      $lcConStr = "host=localhost dbname=UCSMXJURADOS port=5432 user=postgres password=root";
+      $lcConStr = "host=localhost dbname=UCSMJURADOS port=5432 user=postgres password=postgres";
       @$this->h = pg_connect($lcConStr)  or die("Can't connect to database".pg_last_error());;
       if (!$this->h) {
          $this->pcError = "No se pudo conectar a la base de datos";

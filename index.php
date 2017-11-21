@@ -17,10 +17,15 @@
    }
    function fxInicioSesion () {
       $lo = new CLogin();
+      fxAlert("1111111111111111111");
       $lo->paData = ['CNRODNI' => $_REQUEST['pcNroDni'],
                      'CCLAVE' => $_REQUEST['pcClave'],
                      'CTERMIP' => $_SERVER['REMOTE_ADDR']];
+            fxAlert("22222222222222222222");
+
       $llOk = $lo->omIniciarSesion();
+            fxAlert("333333333333333333333");
+
       if (!$llOk) {
          fxInit();
          fxAlert($lo->pcError);
@@ -31,6 +36,7 @@
       $_SESSION['GCNRODNI'] = $lo->paDatos['CNRODNI'];
       $_SESSION['GCNOMBRE'] = $lo->paDatos['CNOMBRE'];
       $_SESSION['GCNIVEL'] = $lo->paDatos['CNIVEL'];
+      fxAlert("XXXXXXXXXXXXXXXXXXXXXXXXXX");
       fxHeader("index1.php");    
    }
 ?>
