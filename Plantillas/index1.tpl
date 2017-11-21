@@ -10,10 +10,11 @@ and open the template in the editor.
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Universidad Católica de Santa María</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <title>Universidad Católica de Santa María</title>
     <script src="JS/java.js"></script>
 </head>
+<body>
  <header>
       <div id="header"></div>
    </header>    
@@ -27,12 +28,11 @@ and open the template in the editor.
              <h2>Matricularse en cursos por Jurado</h2>      
              <a href="MJUR1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
           </div>
-          
       </center> 
     
-    <div class="divFooter">
-   <h1>Universidad Católica Santa María</h1>
-</div>
-    </body>
+    <footer>
+        <h1>Universidad Católica Santa María</h1>
+    </footer>
+</body>
 
 </html>
