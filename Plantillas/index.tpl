@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="Responsive/bootstrap.min.css">
       <link rel="stylesheet" href="CSS/GeneralStyle.css">
-      <title>Fer se la come .l.</title>
+      <title>UCSM JURADOS</title>
    </head>
 <body>
 <div class="divHeader">
