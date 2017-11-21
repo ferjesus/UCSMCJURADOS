@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-21 16:19:46
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-21 16:24:19
          compiled from "Plantillas\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:10675a0b6048b53626-02237926%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '871d6f643341514a84290a0c3f7e40ff852f9170' => 
     array (
       0 => 'Plantillas\\index.tpl',
-      1 => 1511299148,
+      1 => 1511299455,
       2 => 'file',
     ),
   ),
@@ -22,32 +22,40 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_5a0b6048b6f6a3_07813505')) {function content_5a0b6048b6f6a3_07813505($_smarty_tpl) {?><!DOCTYPE html>
 <html>
    <head>
-      <meta HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/styles.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <title>Universidad Católica de Santa María</title>
       <link rel="stylesheet" href="Responsive/bootstrap.min.css">
       <link rel="stylesheet" href="CSS/GeneralStyle.css">
-      <title>Fer se la come .l.</title>
+      <title>UCSM JURADOS</title>
    </head>
 <body>
-<div class="divHeader">
-   <h1>Universidad Católica de Santa María</h1>
-</div>
-<div class="divContent">
+<header>
+   <div class="jumbotron text-center">
+      <h1>Modulo de Cursos por Jurado</h1>
+   </div>
+</header>
+<div class="container text-center">
    <div class="container-fluid">
-   <form action="index.php" method="post" style="background: #fff">
-      <label for="dni">DNI:</label>
-      <input type="text" maxlength="8" name="pcNroDni" title="Número de DNI" autofocus/>
-      <br>
-      <br>
-      <label for="pwd">Clave:</label>
-      <input type="password" maxlength="20" name="pcClave" title="Clave"/><br>
-      <button type="submit" name="Boton1" value="IniciarSesion" title="Iniciar sesión">Iniciar Sesión</button>
+   <form action="index.php" method="post">
+      <div class= "form-group">
+         <label for="dni">DNI:</label>
+         <input type="text" maxlength="8" class="form-control" name="pcNroDni" title="Número de DNI" id="dni" placeholder="Número de DNI" autofocus/>
+      </div>
+      <div class= "form-group">
+         <label for="Clave">Contraseña:</label>
+         <input type="password"  class="form-control" maxlength="20" placeholder="Contraseña" name="pcClave" title="Clave" id="Clave" /><br>
+      </div>
+      <button type="submit" class="btn btn-default"  name="Boton1" value="IniciarSesion" title="Iniciar sesión">Iniciar Sesión</button>
    </form>
    </div>
 </div>
-<div class="divFooter">
-   <h1>Universidad Católica Santa María</h1>
-</div>
 </body>
+<footer>
+    <h5>UCSM</h5>
+</footer>
 
 </html><?php }} ?>
