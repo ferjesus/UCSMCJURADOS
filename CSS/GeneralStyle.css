@@ -1,0 +1,55 @@
+html {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+}
+
+body {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   transition: background-color .5s;
+}
+
+.divHeader{
+   background-color: #1D7713;
+   position: fixed;
+   top: 0;
+   height: 7%;
+   width: 100%;
+   display: table;
+}
+
+.divHeader h1{
+  font-size: 4vmin;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.divContent{
+   background-color: #ffffff;
+   position: fixed;
+   top: 7%;
+   height: 87%;
+   width: 100%;
+   text-align: center;
+   overflow: auto;
+}
+
+.divFooter{
+  background-color: #000000;
+  position: fixed;
+  bottom:0;
+  height: 6%; 
+  width: 100%;
+  display: table;
+  text-align: center;
+}
+
+.divFooter h1{
+  font-size: 2vmin;
+  color: #928f89;
+  display: table-cell;
+  vertical-align: middle;
+}

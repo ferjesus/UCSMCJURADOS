@@ -1,0 +1,64 @@
+@charset "iso-8859-1";
+.fecha
+{
+    width: 5px;
+}
+
+p.titulo
+{
+	color: #C00;	
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.consulta
+{
+	border-spacing: 0; 
+	border-style: solid;
+	border-width: thin;
+	border-color: black;
+}
+
+table
+{
+	font-family: Verdana;
+	border-spacing: 5px;
+}
+
+table.td
+{
+	vertical-align: middle;
+   color: #CC0000;
+	font-weight: bold;
+}
+
+hr
+{
+	margin-left: 0px;
+	width: 66%;
+	border-color: #0000FF;
+}
+
+input[type=text], [type=password]
+{
+	color: #0000CC;
+	background-color: #FFFFA0;
+}
+
+textarea
+{
+	color: #0000CC;
+	background-color: #FFFFA0;
+}
+
+input[type=submit], [type=button]
+{
+	width: 140px;
+	height: 39px;
+}
+
+p.datos
+{
+	font-weight: bold;
+	color: #0000CC;
+}
