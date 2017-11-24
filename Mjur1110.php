@@ -1,15 +1,14 @@
 <?php 
    // Registrar y mantenimiento de notificaciones
    require_once "Libs/Smarty.class.php";
-   require_once "Clases/CNotificacion.php"; 
+   require_once "Clases/CMatricula.php"; 
    session_start();
    $loSmarty = new Smarty;
-   $_SESSION['GCCODUSU'];
    if (!fxInitSession()) {
       fxHeader("index.php");
       fxAlert('Inicie Sesión');
-   } elseif (@$_REQUEST['Boton'] == 'Grabar') {
-      fxGrabar();
+   } elseif (@$_REQUEST['Boton'] == 'Matricularse') {
+      fxMatricular();
    } elseif (@$_REQUEST['Boton'] == 'Salir') {
       fxHeader("index.php");
    } elseif (@$_REQUEST['Boton'] == 'Enviar') {
@@ -20,18 +19,18 @@
    
   function fxInit() {
       $lo = new CMatricula();
-      $llOk = $lo->omInitConsultas();
+      $llOk = $lo->omTraerCursos    ();
       if (!$llOk) {
          fxHeader("index.php", $lo->pcError);
          return;
       }
-      $_SESSION['paUniAca'] = $lo->paUniAca;
+      $_SESSION['paCursos'] = $lo->paCursos;
       fxScreen();
    }
    
    function fxScreen() {
       global $loSmarty;
-      $loSmarty->assign('saUniAca', $_SESSION['paUniAca']);
+      $loSmarty->assign('saCursos', $_SESSION['paCursos']);
       $loSmarty->assign('scBehavior', '0');
       $loSmarty->display('Plantillas/Mjur1110.tpl');
    }
@@ -45,11 +44,12 @@
       fxAlert( 'SIII');
    }
    
-   function fxGrabar() {
-      $lo = new CNotificacion();
-      $lo->paData = ['CTITULO' => $_REQUEST['pcTitulo'], 'CDESCRI' => $_REQUEST['pcDescri'], 'CUNIACA' => $_REQUEST['pcUniAca'],
-                     'CACAUNI' => $_REQUEST['pcAcaUni'], 'CLINK' => $_REQUEST['pcLink'], 'CCODUSU' => $_SESSION['GCCODUSU'], 'CTIPO' => "N"];
-      $llOk = $lo->omGrabarNotificacion();
+   function fxMatricular() {
+      $laData = $_REQUEST['paData']; 
+      $laData['CCODALU'] = $_SESSION['GCCODALU'];
+      $lo = new CMatricula();
+      $lo->paData = $laData;
+      $llOk = $lo->omMatricular();
       if (!$llOk) {
          fxScreen();
          fxAlert($lo->pcError);

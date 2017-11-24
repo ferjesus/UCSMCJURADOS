@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-21 16:24:19
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-23 15:50:38
          compiled from "Plantillas\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:10675a0b6048b53626-02237926%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '871d6f643341514a84290a0c3f7e40ff852f9170' => 
     array (
       0 => 'Plantillas\\index.tpl',
-      1 => 1511299455,
+      1 => 1511460540,
       2 => 'file',
     ),
   ),
@@ -24,13 +24,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" href="CSS/styles.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <title>Universidad Católica de Santa María</title>
-      <link rel="stylesheet" href="Responsive/bootstrap.min.css">
-      <link rel="stylesheet" href="CSS/GeneralStyle.css">
-      <title>UCSM JURADOS</title>
+      <link rel="stylesheet" href="CSS/styles.css">
    </head>
 <body>
 <header>

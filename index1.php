@@ -3,8 +3,7 @@
    require_once "Clases/CBase.php"; 
    session_start();
    $loSmarty = new Smarty;
-   $_SESSION['GCCODUSU'];
-   if (true) {
+   if (!fxInitSession()) {
       fxHeader("index.php");
       fxAlert('Inicie Sesión');
    } elseif (@$_REQUEST['Boton'] == 'Grabar') {

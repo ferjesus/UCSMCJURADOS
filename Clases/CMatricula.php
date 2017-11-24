@@ -2,11 +2,11 @@
 require_once "Clases/CBase.php";
 require_once "Clases/CSql.php";
 class CMatricula extends CBase {
-   public $paData, $paDatos, $paUniaca;
+   public $paData, $paDatos, $paUniaca, $paCursos;
 
    public function __construct() {
       parent::__construct();
-      $this->paData = $this->paDatos = $this->paLogin = null;
+      $this->paData = $this->paDatos = $this->paLogin  =$this->paCursos = null;
    }
    //-----------------------------------
    // MATRICULA EN CURSO 
@@ -70,7 +70,7 @@ class CMatricula extends CBase {
    
    protected function mxTraerDatos($p_oSql) {
    $i = 0;
-      $lcSql = "SELECT CIDCARG, CPROYEC, CCODCUR,CESTADO,CUNIACA,CDESCRI FROM V_A02MCAR ORDER BY CDESCRI";
+      $lcSql = "SELECT CIDCARG, CPROYEC,CESTADO,CUNIACA, CCODCUR,CDESCRI FROM V_A02MCAR ORDER BY CDESCRI";
       $R1 = $p_oSql->omExec($lcSql);
       while ($laFila = $p_oSql->fetch($R1)) {
          $i++;

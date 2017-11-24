@@ -12,7 +12,6 @@ class CLogin extends CBase {
    // INICIO DE SESION GENERICO
    //-----------------------------------
    public function omIniciarSesion() {
-             fxAlert("AAAAAAAAAAAAAAAAAAA");
 
       $llOk = $this->mxValInicioSesion();
       if (!$llOk) {
