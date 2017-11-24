@@ -2,6 +2,9 @@ html {
   min-height: 100%;
   position: relative;
 }
+link {
+    display: none;
+}
 body {
   margin: 0;
   margin-bottom: 40px;
@@ -13,4 +16,10 @@ footer {
   width: 100%;
   height: 40px;
   color: white;
+}
+label{
+    margin:10px 0px;
+}
+.row{
+    margin: 10px 0px;
 }
