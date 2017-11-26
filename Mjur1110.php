@@ -16,7 +16,7 @@
    } else {
       fxInit();
    }
-   
+   ///WASdASdASD
   function fxInit() {
       $lo = new CMatricula();
       $llOk = $lo->omTraerCursos    ();
