@@ -11,14 +11,10 @@
          <script src="JS/java.js"></script>
    </head>
 <body>
-<<<<<<< HEAD
-    <form action="MJUR1110.php" method="post">    
-
-=======
+    <form action="MJUR1110.php" method="post"> 
     <!--<header>
         <div id="header"></div>
     </header>--> 
->>>>>>> 6e15c436f2d7da24d71e77043e0ef29c5b1449c4
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -47,31 +43,24 @@
        </div>
     </header>
     <div class="container">
-        <div class="container">
-            <form action="MJUR1110.php" method="post">
-                <div class= "form-group">
-                   <p>Nombre del Alumno</p>
-                </div>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Cursos disponibles<span class="caret"></span></button>
-                 <div class="col-sm-10">               
-                    <select class='form-control' name='paData[CCODCUR]'>
-                       {foreach from = $saCursos item = i}  
-                          <option value='{$i[0]}'>{$i[5]} </option>
-                       {/foreach}  
-                    </select>
+        <form action="MJUR1110.php" method="post">
+            <div class= "form-group">
+               <p id="NombreAlumno">Nombre del Alumno</p>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Cursos disponibles<span class="caret"></span></button>
+                <div class="col-sm-10">               
+                   <select class='form-control' name='paData[CCODCUR]'>
+                      {foreach from = $saCursos item = i}  
+                         <option value='{$i[0]}'>{$i[5]} </option>
+                      {/foreach}  
+                   </select>
                 </div>   
-                </div>
-                <button type="submit" class="btn btn-default"  name="Boton1" value="Matricularse" title="Matricularse">Matricularse</button>
-            </form>
-        </div>
+            </div>
+            <button type="submit" class="btn btn-default"  name="Boton1" value="Matricularse" title="Matricularse">Matricularse</button>
+        </form>
     </div>
-<<<<<<< HEAD
-    </form>
-    <footer>
-=======
     <footer class="text-center">
->>>>>>> 6e15c436f2d7da24d71e77043e0ef29c5b1449c4
         <h5>UCSM</h5>
     </footer>
 </body>
