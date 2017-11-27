@@ -28,10 +28,10 @@
          fxAlert($lo->pcError);
          return;
       }
-      $_SESSION['GCUNIACA'] = $lo->paDatos['CUNIACA'];
       $_SESSION['GCNRODNI'] = $lo->paDatos['CNRODNI'];
       $_SESSION['GCNOMBRE'] = $lo->paDatos['CNOMBRE'];
       $_SESSION['GCCOALU'] = $lo->paDatos['CCODALU'];
+      $_SESSION['GCESTADO'] = $lo->paDatos['CESTADO'];
       fxHeader("index1.php");    
    }
 ?>

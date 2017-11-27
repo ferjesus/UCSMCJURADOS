@@ -4,10 +4,14 @@
    require_once "Clases/CMatricula.php"; 
    session_start();
    $loSmarty = new Smarty;
+   fxAlert($_SESSION['GCCOALU']);
+
    if (!fxInitSession()) {
       fxHeader("index.php");
       fxAlert('Inicie Sesión');
    } elseif (@$_REQUEST['Boton'] == 'Matricularse') {
+             fxAlert('88888888888888888888');
+
       fxMatricular();
    } elseif (@$_REQUEST['Boton'] == 'Salir') {
       fxHeader("index.php");
@@ -19,7 +23,7 @@
    ///WASdASdASD
   function fxInit() {
       $lo = new CMatricula();
-      $llOk = $lo->omTraerCursos    ();
+      $llOk = $lo->omTraerCursos();
       if (!$llOk) {
          fxHeader("index.php", $lo->pcError);
          return;
@@ -45,8 +49,9 @@
    }
    
    function fxMatricular() {
+       
       $laData = $_REQUEST['paData']; 
-      $laData['CCODALU'] = $_SESSION['GCCODALU'];
+      $laData['CCODALU'] = $_SESSION['GCCOALU'] ;
       $lo = new CMatricula();
       $lo->paData = $laData;
       $llOk = $lo->omMatricular();
@@ -57,7 +62,7 @@
       }
       $_SESSION['paData'] = $lo->paData;
       fxAlert('GRABACION CONFORME');
-      fxScreen1();
+      fxScreen();
       
    }  
    
