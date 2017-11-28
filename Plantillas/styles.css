@@ -23,3 +23,10 @@ label{
 .row{
     margin: 10px 0px;
 }
+.dropxd{
+    margin: 0px 0px 20px 0px;
+}
+.jumbotron{
+    background: #558B2F;
+    color: #e6e6e6;
+}
