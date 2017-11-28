@@ -24,16 +24,16 @@ and open the template in the editor.
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>                        
                 </button>
-                <a class="navbar-brand" href="#">UCSMJurados</a>
+                <a class="navbar-brand" href="https://www.ucsm.edu.pe">UCSM</a>
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Inicio</a></li>
-                    <li><a href="#">Matricularse</a></li>
-                    <li><a href="#">Convalidacion</a></li>
+                    <li class="active"><a href="../index1.php">Inicio</a></li>
+                    <li><a href="../Mjur1110.php">Matricularse</a></li>
+                    <li><a href="../Mjur1120.php">Convalidacion</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
+                  <li><a href="../Mjur1130.php"><span class="glyphicon glyphicon-log-in"></span>   Cerrar Sesion</a></li>
                 </ul>
               </div>
             </div>
@@ -46,21 +46,21 @@ and open the template in the editor.
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <a href="MJUR1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
+                <a href="../Mjur1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
             </div>
             <div class="col-sm-4"></div>
         </div>
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <a href="MJUR1120.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Convalidacion</button></a>
+                <a href="../Mjur1120.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Convalidacion</button></a>
             </div>
             <div class="col-sm-4"></div>
         </div>
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <a href="MJUR1130.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Cerrar Sesion</button></a>
+                <a href="../MJUR1130.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Cerrar Sesion</button></a>
             </div>
             <div class="col-sm-4"></div>
         </div>

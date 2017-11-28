@@ -40,27 +40,41 @@
         </nav>
        <div class="jumbotron text-center">
           <h1>Modulo de Cursos por Jurado</h1>
+          <p id="NombreAlumno">Nombre del Alumno</p>
        </div>
     </header>
     <div class="container">
         <form action="MJUR1110.php" method="post">
-            <div class= "form-group">
-               <p id="NombreAlumno">Nombre del Alumno</p>
+           
+            <div class="row">
+                <div class="jumbotron text-center">
+                        <h3>Cursos disponibles</h3>
+                </div>
             </div>
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Cursos disponibles<span class="caret"></span></button>
-                <div class="col-sm-10">               
-                   <select class='form-control' name='paData[CCODCUR]'>
+            <div class="row">
+                <div class="col-sm-0 col-md-4"></div>
+                <div class="col-sm-10 col-md-4">               
+                   <select class='form-control dropxd' name='paData[CCODCUR]'>
                       {foreach from = $saCursos item = i}  
                          <option value='{$i[0]}'>{$i[5]} </option>
                       {/foreach}  
                    </select>
-                </div>   
+                </div>
+                <div class="col-sm-0 col-md-4"></div>
             </div>
-            <button type="submit" class="btn btn-default"  name="Boton1" value="Matricularse" title="Matricularse">Matricularse</button>
+            <div class="row text-center">
+                <button type="submit" class="btn btn-success dropxd"  name="Boton1" value="Matricularse" title="Matricularse">Matricularse</button>
+            </div>
         </form>
     </div>
-    <footer class="text-center">
-        <h5>UCSM</h5>
+    <footer>
+        <div class="row">
+            <div class="col-sm-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.367072437311!2d-71.54981848456993!3d-16.406173442670852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a8aab7dbfcf%3A0x32794c08084c8aad!2sCatholic+University+of+Santa+Mar%C3%ADa!5e0!3m2!1sen!2spe!4v1511825438162" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row text-center">
+            <h5>© 2017 Universidad Católica de Santa María. Todos los derechos reservados. UCSM</h5>
+        </div>
     </footer>
 </body>
