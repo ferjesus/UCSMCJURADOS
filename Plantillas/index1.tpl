@@ -10,7 +10,7 @@ and open the template in the editor.
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="Plantillas/styles.css">
     <title>Universidad Católica de Santa María</title>
     <script src="JS/java.js"></script>
 </head>
@@ -28,25 +28,24 @@ and open the template in the editor.
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="../index1.php">Inicio</a></li>
-                    <li><a href="../Mjur1110.php">Matricularse</a></li>
-                    <li><a href="../Mjur1120.php">Convalidacion</a></li>
+                    <li class="active"><a href="index1.php">Inicio</a></li>
+                    <li><a href="Mjur1110.php">Matricularse</a></li>
+                    <li><a href="Mjur1120.php">Convalidacion</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="../Mjur1130.php"><span class="glyphicon glyphicon-log-in"></span>   Cerrar Sesion</a></li>
+                  <li><a href="Mjur1130.php"><span class="glyphicon glyphicon-log-in"></span>   Cerrar Sesion</a></li>
                 </ul>
               </div>
             </div>
         </nav>
        <div class="jumbotron text-center">
-          <h1>Modulo de Cursos por Jurado</h1>
+          <h1>Modulo de Cursos por Juradoooos</h1>
        </div>
     </header>
     <div class="container text-center">
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <a href="../Mjur1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
                 <a href="Mjur1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
             </div>
             <div class="col-sm-4"></div>
@@ -54,14 +53,14 @@ and open the template in the editor.
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <a href="../Mjur1120.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Convalidacion</button></a>
+                <a href="Mjur1120.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Convalidacion</button></a>
             </div>
             <div class="col-sm-4"></div>
         </div>
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <a href="../MJUR1130.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Cerrar Sesion</button></a>
+                <a href="MJUR1130.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Cerrar Sesion</button></a>
             </div>
             <div class="col-sm-4"></div>
         </div>
@@ -78,5 +77,3 @@ and open the template in the editor.
         </div>
     </footer>
 </body>
-
-</html>
