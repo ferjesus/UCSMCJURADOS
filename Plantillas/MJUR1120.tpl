@@ -7,7 +7,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <title>Universidad Católica de Santa María</title>
-        <link rel="stylesheet" type="text/css" href="./styles.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="Plantillas/styles.css" media="screen">
         <script src="./java.js"></script>
         <!--<script>
             $(document).ready(function () {
@@ -49,7 +49,7 @@
        </div>
     </header>
     <div class="container">
-        <form action="MJUR1110.php" method="post">
+        <form action="MJUR1120.php" method="post">
             <div class= "form-group text-center">
                 <div class="row">
                     <div class="jumbotron text-center">

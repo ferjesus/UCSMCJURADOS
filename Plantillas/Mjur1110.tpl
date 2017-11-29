@@ -11,7 +11,7 @@
          <script src="JS/java.js"></script>
    </head>
 <body>
-    <form action="Mjur1110.php" method="post"> 
+   
     <!--<header>
         <div id="header"></div>
     </header>--> 
