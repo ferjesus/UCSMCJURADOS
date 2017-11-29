@@ -29,7 +29,7 @@ class CConvalida extends CBase {
    
    protected function mxConvalidar($p_oSql) {
       $lcJson = json_encode($this->paData);
-      $lcSql = "SELECT F_MATRICULA('$lcJson')";
+      $lcSql = "SELECT F_CONVALIDA('$lcJson')";
       print_r($lcSql);
       $RS = $p_oSql->omExec($lcSql);
       $laFila = $p_oSql->fetch($RS);
@@ -43,7 +43,7 @@ class CConvalida extends CBase {
       return true;
    }
    protected function mxValMatricula () {
-      if (empty($this->paData['CCODALU'])) {
+      if (empty($this->paData['CCODCUR'])) {
          $this->pcError = "CODIGO DE ALUMNO NO DEFINIDO";
          return false;
       } elseif (empty($this->paData['CIDCARG'])) {
@@ -112,11 +112,11 @@ class CConvalida extends CBase {
    
    protected function mxTraerCargas($p_oSql) {
    $i = 0;
-      $lcSql = "SELECT CCODCUR,CDESCRI, CPLAEST,CUNIACA,CNOMUNI FROM V_A02MCAR WHERE CPROYEC = '2017-1' ORDER BY  CDESCRI";
+      $lcSql = "SELECT CIDCARG,CCODCUR,CDESCRI, CPLAEST,CUNIACA,CNOMUNI FROM V_A02MCAR WHERE CPROYEC = '2017-1' ORDER BY  CDESCRI";
       $R1 = $p_oSql->omExec($lcSql);
       while ($laFila = $p_oSql->fetch($R1)) {
          $i++;
-         $this->paCargas[] = [$laFila[0], $laFila[1], $laFila[2], $laFila[3], $laFila[4]];
+         $this->paCargas[] = [$laFila[0], $laFila[1], $laFila[2], $laFila[3], $laFila[4],$laFila[5]];
       }
       //$this->paUniAca[] = ['00', '* TODAS'];
       if ($i == 0) {

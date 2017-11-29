@@ -79,9 +79,9 @@
                     </div>
                     <div class="col-sm-0 col-md-4"></div>
                     <div class="col-sm-10 col-md-4">               
-                       <select class='form-control dropxd' name='paData[CCODCUR]'>
+                       <select class='form-control dropxd' name='paData[CIDCARG]'>
                           {foreach from = $saCargas item = i}  
-                             <option value='{$i[0]}'>{$i[1]} - {$i[4]} </option>
+                             <option value='{$i[0]}'>{$i[2]} - {$i[5]} </option>
                           {/foreach}  
                        </select>
                     </div>

@@ -55,12 +55,10 @@
    }
    
    function fxMatricular() {
-       
       $laData = $_REQUEST['paData']; 
-      $laData['CCODALU'] = $_SESSION['GCCOALU'] ;
-      $lo = new CMatricula();
+      $lo = new CConvalida();
       $lo->paData = $laData;
-      $llOk = $lo->omMatricular();
+      $llOk = $lo->omConvalidar();
       if (!$llOk) {
          fxScreen();
          fxAlert($lo->pcError);

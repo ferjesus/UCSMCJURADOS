@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 18:39:55
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 19:17:18
          compiled from "Plantillas\MJUR1120.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:161015a1ef02f43b1d1-79622011%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0a67d6e2dd895469bd3a0ae216267b39dad80bc0' => 
     array (
       0 => 'Plantillas\\MJUR1120.tpl',
-      1 => 1511977192,
+      1 => 1511979437,
       2 => 'file',
     ),
   ),
@@ -113,15 +113,15 @@ $_smarty_tpl->tpl_vars['i']->_loop = true;
                     </div>
                     <div class="col-sm-0 col-md-4"></div>
                     <div class="col-sm-10 col-md-4">               
-                       <select class='form-control dropxd' name='paData[CCODCUR]'>
+                       <select class='form-control dropxd' name='paData[CIDCARG]'>
                           <?php  $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['i']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['saCargas']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['i']->key => $_smarty_tpl->tpl_vars['i']->value){
 $_smarty_tpl->tpl_vars['i']->_loop = true;
 ?>  
                              <option value='<?php echo $_smarty_tpl->tpl_vars['i']->value[0];?>
-'><?php echo $_smarty_tpl->tpl_vars['i']->value[1];?>
- - <?php echo $_smarty_tpl->tpl_vars['i']->value[4];?>
+'><?php echo $_smarty_tpl->tpl_vars['i']->value[2];?>
+ - <?php echo $_smarty_tpl->tpl_vars['i']->value[5];?>
  </option>
                           <?php } ?>  
                        </select>
