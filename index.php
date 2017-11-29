@@ -32,7 +32,7 @@
       $_SESSION['GCNOMBRE'] = $lo->paDatos['CNOMBRE'];
       $_SESSION['GCCOALU'] = $lo->paDatos['CCODALU'];
       $_SESSION['GCESTADO'] = $lo->paDatos['CESTADO'];
-
+      $_SESSION['GCUNIACA'] = $lo->paDatos['CUNIACA'];
       fxHeader("index1.php");    
    }
 ?>

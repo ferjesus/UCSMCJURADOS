@@ -49,11 +49,8 @@
        </div>
     </header>
     <div class="container">
-<<<<<<< HEAD
         <form action="MJUR1120.php" method="post">
-=======
         <form action="Mjur1120.php" method="post">
->>>>>>> fd3597c92fdad6e175a989e93596ce5a656ff965
             <div class= "form-group text-center">
                 <div class="row">
                     <div class="jumbotron text-center">
@@ -63,7 +60,7 @@
                     <div class="col-sm-10 col-md-4">               
                        <select class='form-control dropxd' name='paData[CCODCUR]'>
                           {foreach from = $saCursos item = i}  
-                             <option value='{$i[0]}'>{$i[5]} </option>
+                             <option value='{$i[0]}'>{$i[1]} - {$i[4]} </option>
                           {/foreach}  
                        </select>
                     </div>
@@ -76,8 +73,8 @@
                     <div class="col-sm-0 col-md-4"></div>
                     <div class="col-sm-10 col-md-4">               
                        <select class='form-control dropxd' name='paData[CCODCUR]'>
-                          {foreach from = $saCursos item = i}  
-                             <option value='{$i[0]}'>{$i[5]} </option>
+                          {foreach from = $saCargas item = i}  
+                             <option value='{$i[0]}'>{$i[1]} - {$i[4]} </option>
                           {/foreach}  
                        </select>
                     </div>

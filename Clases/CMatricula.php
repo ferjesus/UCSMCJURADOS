@@ -56,6 +56,10 @@ class CMatricula extends CBase {
    // OBTENER DATOS DE CURSOS
    //-----------------------------------
    public function omTraerCursos(){
+      $llOk = $this->mxValTraerDatos();
+      if (!$llOk) {
+         return false;
+      }
       $loSql = new CSql();
       $llOk = $loSql->omConnect();
       if (!$llOk) {
@@ -66,11 +70,17 @@ class CMatricula extends CBase {
       $loSql->omDisconnect();
       return $llOk;
    }
-   
+      protected function mxValTraerDatos () {
+      if (empty($this->paData['CUNIACA'])) {
+         $this->pcError = "UNIDAD ACADEMICA NO DEFINIDA";
+         return false;
+      }
+      return true;
+   }
    
    protected function mxTraerDatos($p_oSql) {
-   $i = 0;
-      $lcSql = "SELECT CIDCARG, CPROYEC,CESTADO,CUNIACA, CCODCUR,CDESCRI FROM V_A02MCAR ORDER BY CDESCRI";
+      $i = 0;
+      $lcSql = "SELECT CIDCARG, CPROYEC,CESTADO,CUNIACA, CCODCUR,CDESCRI FROM V_A02MCAJ  WHERE CUNIACA ='".$this->paData['CUNIACA']."' ORDER BY CDESCRI";
       $R1 = $p_oSql->omExec($lcSql);
       while ($laFila = $p_oSql->fetch($R1)) {
          $i++;
@@ -78,7 +88,7 @@ class CMatricula extends CBase {
       }
       //$this->paUniAca[] = ['00', '* TODAS'];
       if ($i == 0) {
-         $this->pcError = 'CURSOS NO ESTAN DEFINIDAS';
+         $this->pcError = 'CURSOS NO ESTAN DEFINIDOS';
          return false;
       }    
       return true;

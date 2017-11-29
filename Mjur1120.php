@@ -1,10 +1,9 @@
 <?php 
    // Registrar y mantenimiento de notificaciones
    require_once "Libs/Smarty.class.php";
-   require_once "Clases/CMatricula.php"; 
+   require_once "Clases/CConvalida.php"; 
    session_start();
    $loSmarty = new Smarty;
-   fxAlert($_SESSION['GCCOALU']);
 
    if (!fxInitSession()) {
       fxHeader("index.php");
@@ -20,19 +19,28 @@
    }
    ///WASdASdASD
   function fxInit() {
-      $lo = new CMatricula();
+      $laData['CUNIACA'] = $_SESSION['GCUNIACA'] ;
+      $lo = new CConvalida();
+      $lo->paData = $laData;
       $llOk = $lo->omTraerCursos();
       if (!$llOk) {
-         fxHeader("index.php", $lo->pcError);
+         fxHeader("index1.php", $lo->pcError);
+         return;
+      }
+      $llOk = $lo->omTraerCargas();
+      if (!$llOk) {
+         fxHeader("index1.php", $lo->pcError);
          return;
       }
       $_SESSION['paCursos'] = $lo->paCursos;
+      $_SESSION['paCargas'] = $lo->paCargas;
       fxScreen();
    }
    
    function fxScreen() {
       global $loSmarty;
       $loSmarty->assign('saCursos', $_SESSION['paCursos']);
+      $loSmarty->assign('saCargas', $_SESSION['paCargas']);
       $loSmarty->assign('scBehavior', '0');
       $loSmarty->display('Plantillas/MJUR1120.tpl');
    }

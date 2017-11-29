@@ -4,7 +4,6 @@
    require_once "Clases/CMatricula.php"; 
    session_start();
    $loSmarty = new Smarty;
-   fxAlert($_SESSION['GCCOALU']);
 
    if (!fxInitSession()) {
       fxHeader("index.php");
@@ -20,10 +19,12 @@
    }
    ///WASdASdASD
   function fxInit() {
+      $laData['CUNIACA'] = $_SESSION['GCUNIACA'] ;
       $lo = new CMatricula();
+      $lo->paData = $laData;
       $llOk = $lo->omTraerCursos();
       if (!$llOk) {
-         fxHeader("index.php", $lo->pcError);
+         fxHeader("index1.php", $lo->pcError);
          return;
       }
       $_SESSION['paCursos'] = $lo->paCursos;
@@ -43,7 +44,6 @@
       $lo->paData = ['CTITULO' => $_REQUEST['pcTitulo'], 'CDESCRI' => $_REQUEST['pcDescri']];
       $llOk = $lo->omEnviarNotificacion();
       $_SESSION['paData'] = $lo->paData;
-      fxAlert( 'SIII');
    }
    
    function fxMatricular() {

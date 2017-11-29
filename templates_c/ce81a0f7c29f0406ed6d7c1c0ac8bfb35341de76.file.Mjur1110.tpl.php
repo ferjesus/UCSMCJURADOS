@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 16:20:03
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 17:10:59
          compiled from "Plantillas\Mjur1110.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:267555a173ef84e6375-60486424%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ce81a0f7c29f0406ed6d7c1c0ac8bfb35341de76' => 
     array (
       0 => 'Plantillas\\Mjur1110.tpl',
-      1 => 1511968791,
+      1 => 1511971825,
       2 => 'file',
     ),
   ),
@@ -37,7 +37,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
          <script src="JS/java.js"></script>
    </head>
 <body>
-    <form action="Mjur1110.php" method="post"> 
+   
     <!--<header>
         <div id="header"></div>
     </header>--> 
