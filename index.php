@@ -33,6 +33,7 @@
       $_SESSION['GCCOALU'] = $lo->paDatos['CCODALU'];
       $_SESSION['GCESTADO'] = $lo->paDatos['CESTADO'];
       $_SESSION['GCUNIACA'] = $lo->paDatos['CUNIACA'];
+      fxAlert( $_SESSION['GCUNIACA'] );
       fxHeader("index1.php");    
    }
 ?>
