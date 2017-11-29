@@ -9,7 +9,7 @@
       fxHeader("index.php");
       fxAlert('Inicie Sesión');
    } elseif (@$_REQUEST['Boton1'] == 'Convalidar') {
-      fxMatricular();
+      fxConvalidar();
    } elseif (@$_REQUEST['Boton'] == 'Salir') {
       fxHeader("index.php");
    } elseif (@$_REQUEST['Boton'] == 'Enviar') {
@@ -54,7 +54,7 @@
       fxAlert( 'SIII');
    }
    
-   function fxMatricular() {
+   function fxConvalidar() {
       $laData = $_REQUEST['paData']; 
       $lo = new CConvalida();
       $lo->paData = $laData;
