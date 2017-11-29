@@ -1,7 +1,7 @@
 <?php
 require_once "Clases/CBase.php";
 require_once "Clases/CSql.php";
-class CMatricula extends CBase {
+class CConvalida extends CBase {
    public $paData, $paDatos, $paUniaca;
 
    public function __construct() {
