@@ -9,9 +9,9 @@ class CConvalida extends CBase {
       $this->paData = $this->paDatos = $this->paLogin = $this->paCargas= null;
    }
    //-----------------------------------
-   // MATRICULA EN CURSO 
+   // SOLICITUD DE CONVALIDACION  
    //-----------------------------------
-   public function omMatricular() {
+   public function omConvalidar() {
       $llOk = $this->mxValMatricula();
       if (!$llOk) {
          return false;
@@ -22,12 +22,12 @@ class CConvalida extends CBase {
          $this->pcError = $loSql->pcError;
          return false;
       }
-      $llOk = $this->mxMatricular($loSql);
+      $llOk = $this->mxConvalidar($loSql);
       $loSql->omDisconnect();
       return $llOk;
    }
    
-   protected function mxMatricular($p_oSql) {
+   protected function mxConvalidar($p_oSql) {
       $lcJson = json_encode($this->paData);
       $lcSql = "SELECT F_MATRICULA('$lcJson')";
       print_r($lcSql);

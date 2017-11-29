@@ -1,33 +1,25 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 10:32:57
-=======
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 12:01:25
->>>>>>> 73ac1944986618b3d8cdbd393ea9a0d723aee942
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 12:36:32
          compiled from "Plantillas\index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:10675a0b6048b53626-02237926%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:51305a1ef0201ec486-27540155%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '871d6f643341514a84290a0c3f7e40ff852f9170' => 
     array (
       0 => 'Plantillas\\index.tpl',
-<<<<<<< HEAD
-      1 => 1511968791,
-=======
-      1 => 1511970015,
->>>>>>> 73ac1944986618b3d8cdbd393ea9a0d723aee942
+      1 => 1511976740,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '10675a0b6048b53626-02237926',
+  'nocache_hash' => '51305a1ef0201ec486-27540155',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_5a0b6048b6f6a3_07813505',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.8',
+  'unifunc' => 'content_5a1ef0202213e7_66744114',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5a0b6048b6f6a3_07813505')) {function content_5a0b6048b6f6a3_07813505($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_5a1ef0202213e7_66744114')) {function content_5a1ef0202213e7_66744114($_smarty_tpl) {?><!DOCTYPE html>
 <html>
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <title>Universidad Católica de Santa María</title>
-      <link rel="stylesheet" href="./styles.css">
+      <link rel="stylesheet" href="Plantillas/styles.css">
    </head>
 <body>
 <header>
@@ -71,7 +63,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </div>
 </body>
 <footer class="text-center">
-    <h5>UCSM</h5>
+    <h4>UCSM</h4>
 </footer>
 
 </html><?php }} ?>

@@ -50,16 +50,14 @@
        </div>
     </header>
     <div class="container">
-<<<<<<< HEAD
-        <form action="MJUR1120.php" method="post">
-        <form action="Mjur1120.php" method="post">
-=======
 
         <form action="MJUR1120.php" method="post">
+        <form action="Mjur1120.php" method="post">
+
+        <form action="MJUR1120.php" method="post">
 
         <form action="Mjur1120.php" method="post">
 
->>>>>>> 73ac1944986618b3d8cdbd393ea9a0d723aee942
             <div class= "form-group text-center">
                 <div class="row">
                     <div class="jumbotron text-center">

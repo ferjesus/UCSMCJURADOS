@@ -1,37 +1,36 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 17:10:59
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 18:36:44
          compiled from "Plantillas\Mjur1110.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:267555a173ef84e6375-60486424%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:117405a1ef02c6611f9-74943758%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'ce81a0f7c29f0406ed6d7c1c0ac8bfb35341de76' => 
     array (
       0 => 'Plantillas\\Mjur1110.tpl',
-      1 => 1511971825,
+      1 => 1511976740,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '267555a173ef84e6375-60486424',
+  'nocache_hash' => '117405a1ef02c6611f9-74943758',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_5a173ef85093d6_43369386',
   'variables' => 
   array (
     'saCursos' => 0,
     'i' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.8',
+  'unifunc' => 'content_5a1ef02c690f84_84662204',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5a173ef85093d6_43369386')) {function content_5a173ef85093d6_43369386($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_5a1ef02c690f84_84662204')) {function content_5a1ef02c690f84_84662204($_smarty_tpl) {?><!DOCTYPE html>
 <html>
    <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
         <title>Universidad Católica de Santa María</title>
         <link rel="stylesheet" type="text/css" href="Plantillas/styles.css" media="screen">
          <script src="JS/java.js"></script>
@@ -50,16 +49,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>                        
                 </button>
-                <a class="navbar-brand" href="#">UCSMJurados</a>
+                <a class="navbar-brand" href="https://www.ucsm.edu.pe">UCSM</a>
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index1.php">Inicio</a></li>
                     <li><a href="Mjur1110.php">Matricularse</a></li>
                     <li><a href="Mjur1120.php">Convalidacion</a></li>
+                    <li><a href="Mjur1140.php">Anulacion de Matricula</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="Mjur1130.php"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
+                  <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
                 </ul>
               </div>
             </div>

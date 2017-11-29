@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 18:21:09
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 18:39:55
          compiled from "Plantillas\MJUR1120.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:97065a1edc7c9731f3-99557005%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:161015a1ef02f43b1d1-79622011%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0a67d6e2dd895469bd3a0ae216267b39dad80bc0' => 
     array (
       0 => 'Plantillas\\MJUR1120.tpl',
-      1 => 1511976068,
+      1 => 1511977192,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '97065a1edc7c9731f3-99557005',
+  'nocache_hash' => '161015a1ef02f43b1d1-79622011',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_5a1edc7c9bbb18_26614215',
+  'unifunc' => 'content_5a1ef02f476a88_73959874',
   'variables' => 
   array (
     'saCursos' => 0,
@@ -25,7 +25,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5a1edc7c9bbb18_26614215')) {function content_5a1edc7c9bbb18_26614215($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_5a1ef02f476a88_73959874')) {function content_5a1ef02f476a88_73959874($_smarty_tpl) {?><!DOCTYPE html>
 <html>
    <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +35,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <title>Universidad Católica de Santa María</title>
         <link rel="stylesheet" type="text/css" href="Plantillas/styles.css" media="screen">
-        <script src="./java.js"></script>
+        <script src="JS/java.js"></script>
         <!--<script>
             $(document).ready(function () {
               $('.headerMenu').load('./header.html');
@@ -63,9 +63,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <li class="active"><a href="index1.php">Inicio</a></li>
                     <li><a href="Mjur1110.php">Matricularse</a></li>
                     <li><a href="Mjur1120.php">Convalidacion</a></li>
+                    <li><a href="Mjur1140.php">Anulacion de Matricula</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="Mjur1130.php"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
+                  <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
                 </ul>
               </div>
             </div>
@@ -76,8 +77,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
        </div>
     </header>
     <div class="container">
+
         <form action="MJUR1120.php" method="post">
         <form action="Mjur1120.php" method="post">
+
+        <form action="MJUR1120.php" method="post">
+
+        <form action="Mjur1120.php" method="post">
+
             <div class= "form-group text-center">
                 <div class="row">
                     <div class="jumbotron text-center">

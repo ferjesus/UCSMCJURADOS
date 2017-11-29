@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 17:10:46
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 18:36:38
          compiled from "Plantillas\index1.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:132765a1738c9c0e5b3-26574046%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:128795a1ef02630db84-12875030%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'dbf3f05f78ac529237b1a116192852362cf54038' => 
     array (
       0 => 'Plantillas\\index1.tpl',
-      1 => 1511971825,
+      1 => 1511976740,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '132765a1738c9c0e5b3-26574046',
+  'nocache_hash' => '128795a1ef02630db84-12875030',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_5a1738c9c2de87_29670191',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.8',
+  'unifunc' => 'content_5a1ef02632b059_27541623',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5a1738c9c2de87_29670191')) {function content_5a1738c9c2de87_29670191($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_5a1ef02632b059_27541623')) {function content_5a1ef02632b059_27541623($_smarty_tpl) {?><!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -52,15 +52,16 @@ and open the template in the editor.
                     <li class="active"><a href="index1.php">Inicio</a></li>
                     <li><a href="Mjur1110.php">Matricularse</a></li>
                     <li><a href="Mjur1120.php">Convalidacion</a></li>
+                    <li><a href="Mjur1140.php">Anulacion de Matricula</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="Mjur1130.php"><span class="glyphicon glyphicon-log-in"></span>   Cerrar Sesion</a></li>
+                  <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span>   Cerrar Sesion</a></li>
                 </ul>
               </div>
             </div>
         </nav>
        <div class="jumbotron text-center">
-          <h1>Modulo de Cursos por Juradoooos</h1>
+          <h1>Modulo de Cursos por Jurados</h1>
        </div>
     </header>
     <div class="container text-center">
@@ -81,7 +82,7 @@ and open the template in the editor.
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <a href="MJUR1130.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Cerrar Sesion</button></a>
+                <a href="Mjur1140.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Anular una Matricula Vigente</button></a>
             </div>
             <div class="col-sm-4"></div>
         </div>
