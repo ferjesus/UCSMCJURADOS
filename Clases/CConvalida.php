@@ -12,7 +12,7 @@ class CConvalida extends CBase {
    // SOLICITUD DE CONVALIDACION  
    //-----------------------------------
    public function omConvalidar() {
-      $llOk = $this->mxValMatricula();
+      $llOk = $this->mxValConvalidacion();
       if (!$llOk) {
          return false;
       }
@@ -42,12 +42,15 @@ class CConvalida extends CBase {
       }
       return true;
    }
-   protected function mxValMatricula () {
+   protected function mxValConvalidacion () {
       if (empty($this->paData['CCODCUR'])) {
-         $this->pcError = "CODIGO DE ALUMNO NO DEFINIDO";
+         $this->pcError = "CODIGO DE CURSO NO DEFINIDO";
          return false;
       } elseif (empty($this->paData['CIDCARG'])) {
         $this->pcError = "CARGA NO DEFINIDA";
+        return false;
+      } elseif (empty($this->paData['CCODALU'])) {
+        $this->pcError = "CODIGO DE ALUMNO NO DEFINIDO";
         return false;
       }
       return true;

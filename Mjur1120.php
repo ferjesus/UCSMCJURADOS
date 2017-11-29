@@ -56,6 +56,7 @@
    
    function fxConvalidar() {
       $laData = $_REQUEST['paData']; 
+      $laData['CCODALU'] = $_SESSION['GCCODALU'] ;
       $lo = new CConvalida();
       $lo->paData = $laData;
       $llOk = $lo->omConvalidar();
