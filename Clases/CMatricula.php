@@ -30,12 +30,12 @@ class CMatricula extends CBase {
    protected function mxMatricular($p_oSql) {
       $lcJson = json_encode($this->paData);
       $lcSql = "SELECT F_MATRICULA('$lcJson')";
-      print_r($lcSql);
+     // print_r($lcSql);
       $RS = $p_oSql->omExec($lcSql);
       $laFila = $p_oSql->fetch($RS);
       $laFila[0] = (!$laFila[0]) ? '{"ERROR": "ERROR DE EJECUCION DE BASE DE DATOS"}' : $laFila[0];
       $this->paDatos = json_decode($laFila[0], true);
-      echo '<br>'.$laFila[0].'<br>';
+     // echo '<br>'.$laFila[0].'<br>';
       if (!empty($this->paDatos['ERROR'])) {
          $this->pcError = $this->paDatos['ERROR'];
          return false; 

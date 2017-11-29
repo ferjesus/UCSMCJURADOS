@@ -12,9 +12,6 @@
    </head>
 <body>
     <form action="MJUR1110.php" method="post"> 
-    <!--<header>
-        <div id="header"></div>
-    </header>--> 
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-26 19:32:21
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 10:05:48
          compiled from "Plantillas/Mjur1110.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:11190348755a1b589f1782f7-71957043%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3775b0afa97a207484b2019200b86ae706e54dda' => 
     array (
       0 => 'Plantillas/Mjur1110.tpl',
-      1 => 1511742730,
+      1 => 1511967939,
       2 => 'file',
     ),
   ),
@@ -31,20 +31,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="CSS/styles.css">
+        
         <title>Universidad Católica de Santa María</title>
-        <link rel="stylesheet" type="text/css" href="./styles.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="Plantillas/styles.css" media="screen">
          <script src="JS/java.js"></script>
    </head>
 <body>
-<<<<<<< HEAD
-    <form action="Mjur1110.php" method="post">    
-
-=======
+    <form action="Mjur1110.php" method="post"> 
     <!--<header>
         <div id="header"></div>
     </header>--> 
->>>>>>> 6e15c436f2d7da24d71e77043e0ef29c5b1449c4
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -58,52 +54,59 @@ $_valid = $_smarty_tpl->decodeProperties(array (
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Inicio</a></li>
-                    <li><a href="#">Matricularse</a></li>
-                    <li><a href="#">Convalidacion</a></li>
+                    <li class="active"><a href="index1.php">Inicio</a></li>
+                    <li><a href="Mjur1110.php">Matricularse</a></li>
+                    <li><a href="Mjur1120.php">Convalidacion</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
+                  <li><a href="Mjur1130.php"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
                 </ul>
               </div>
             </div>
         </nav>
        <div class="jumbotron text-center">
           <h1>Modulo de Cursos por Jurado</h1>
+          <p id="NombreAlumno">Nombre del Alumno</p>
        </div>
     </header>
     <div class="container">
-        <div class="container">
-            <form action="Mjur1110.php" method="post">
-                <div class= "form-group">
-                   <p>Nombre del Alumno</p>
+        <form action="Mjur1110.php" method="post">
+           
+            <div class="row">
+                <div class="jumbotron text-center">
+                        <h3>Cursos disponibles</h3>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Cursos disponibles<span class="caret"></span></button>
-                 <div class="col-sm-10">               
-                    <select class='form-control' name='paData[CIDCARG]'>
-                       <?php  $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['i']->_loop = false;
+            </div>
+            <div class="row">
+                <div class="col-sm-0 col-md-4"></div>
+                <div class="col-sm-10 col-md-4">               
+                   <select class='form-control dropxd' name='paData[CIDCARG]'>
+                      <?php  $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['i']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['saCursos']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['i']->key => $_smarty_tpl->tpl_vars['i']->value){
 $_smarty_tpl->tpl_vars['i']->_loop = true;
 ?>  
-                          <option value='<?php echo $_smarty_tpl->tpl_vars['i']->value[0];?>
+                         <option value='<?php echo $_smarty_tpl->tpl_vars['i']->value[0];?>
 '><?php echo $_smarty_tpl->tpl_vars['i']->value[5];?>
  </option>
-                       <?php } ?>  
-                    </select>
-                </div>   
+                      <?php } ?>  
+                   </select>
                 </div>
-                <button type="submit" class="btn btn-default"  name="Boton" value="Matricularse" title="Matricularse">Matricularse</button>
-            </form>
-        </div>
+                <div class="col-sm-0 col-md-4"></div>
+            </div>
+            <div class="row text-center">
+                <button type="submit" class="btn btn-success dropxd"  name="Boton1" value="Matricularse" title="Matricularse">Matricularse</button>
+            </div>
+        </form>
     </div>
-<<<<<<< HEAD
-    </form>
     <footer>
-=======
-    <footer class="text-center">
->>>>>>> 6e15c436f2d7da24d71e77043e0ef29c5b1449c4
-        <h5>UCSM</h5>
+        <div class="row">
+            <div class="col-sm-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.367072437311!2d-71.54981848456993!3d-16.406173442670852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a8aab7dbfcf%3A0x32794c08084c8aad!2sCatholic+University+of+Santa+Mar%C3%ADa!5e0!3m2!1sen!2spe!4v1511825438162" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row text-center">
+            <h5>© 2017 Universidad Católica de Santa María. Todos los derechos reservados. UCSM</h5>
+        </div>
     </footer>
 </body><?php }} ?>
