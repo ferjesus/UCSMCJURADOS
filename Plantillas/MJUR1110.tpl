@@ -5,13 +5,16 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="CSS/styles.css">
+        
         <title>Universidad Católica de Santa María</title>
-        <link rel="stylesheet" type="text/css" href="./styles.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="Plantillas/styles.css" media="screen">
          <script src="JS/java.js"></script>
    </head>
 <body>
-    <form action="MJUR1110.php" method="post"> 
+    <form action="Mjur1110.php" method="post"> 
+    <!--<header>
+        <div id="header"></div>
+    </header>--> 
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -25,12 +28,12 @@
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Inicio</a></li>
-                    <li><a href="#">Matricularse</a></li>
-                    <li><a href="#">Convalidacion</a></li>
+                    <li class="active"><a href="index1.php">Inicio</a></li>
+                    <li><a href="Mjur1110.php">Matricularse</a></li>
+                    <li><a href="Mjur1120.php">Convalidacion</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
+                  <li><a href="Mjur1130.php"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
                 </ul>
               </div>
             </div>
@@ -41,7 +44,7 @@
        </div>
     </header>
     <div class="container">
-        <form action="MJUR1110.php" method="post">
+        <form action="Mjur1110.php" method="post">
            
             <div class="row">
                 <div class="jumbotron text-center">
@@ -51,7 +54,7 @@
             <div class="row">
                 <div class="col-sm-0 col-md-4"></div>
                 <div class="col-sm-10 col-md-4">               
-                   <select class='form-control dropxd' name='paData[CCODCUR]'>
+                   <select class='form-control dropxd' name='paData[CIDCARG]'>
                       {foreach from = $saCursos item = i}  
                          <option value='{$i[0]}'>{$i[5]} </option>
                       {/foreach}  

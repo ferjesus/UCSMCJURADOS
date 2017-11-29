@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-23 22:30:02
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 16:19:53
          compiled from "Plantillas\index1.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:132765a1738c9c0e5b3-26574046%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dbf3f05f78ac529237b1a116192852362cf54038' => 
     array (
       0 => 'Plantillas\\index1.tpl',
-      1 => 1511472370,
+      1 => 1511968791,
       2 => 'file',
     ),
   ),
@@ -27,41 +27,78 @@ and open the template in the editor.
 -->
 <html>
 <head>
-   <title>UCSMAPP</title>
-   <meta HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="Responsive/bootstrap.min.css">
-   <link rel="stylesheet" href="CSS/GeneralStyle.css">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="CSS/bootstrap337/css/bootstrap.min.css" rel="stylesheet">
-   <link href="CSS/style.css" rel="stylesheet">
-   <link href="CSS/stylesnot.css" rel="stylesheet">
-   <script src="JS/jquery-3.1.1.min.js"></script>
-   <script src="CSS/bootstrap337/js/bootstrap.min.js"></script>
-   <script src="JS/java.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Universidad Católica de Santa María</title>
+    <script src="JS/java.js"></script>
 </head>
- <header>
-      <div id="header"></div>
-   </header>    
-
 <body>
     <header>
-        <div id="header"></div>
-    </header>    
-    <center>
-        <div class="col-lg-12 col-md-12 col-sm-12">
-             <BR>
-            <h1 class="titulos-pagina">CURSOS POR JURADO UCSM</h1>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="https://www.ucsm.edu.pe">UCSM</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="../index1.php">Inicio</a></li>
+                    <li><a href="../Mjur1110.php">Matricularse</a></li>
+                    <li><a href="../Mjur1120.php">Convalidacion</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="../Mjur1130.php"><span class="glyphicon glyphicon-log-in"></span>   Cerrar Sesion</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+       <div class="jumbotron text-center">
+          <h1>Modulo de Cursos por Jurado</h1>
+       </div>
+    </header>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <a href="../Mjur1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
+                <a href="Mjur1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
+            </div>
+            <div class="col-sm-4"></div>
         </div>
-        <div class="container">
-            <h2>Matricularse en cursos por Jurado</h2>      
-            <a href="MJUR1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <a href="../Mjur1120.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Convalidacion</button></a>
+            </div>
+            <div class="col-sm-4"></div>
         </div>
-    </center>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <a href="../MJUR1130.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Cerrar Sesion</button></a>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+    <div class="row"></div>
     <footer>
-        <h1>Universidad Católica Santa María</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.367072437311!2d-71.54981848456993!3d-16.406173442670852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a8aab7dbfcf%3A0x32794c08084c8aad!2sCatholic+University+of+Santa+Mar%C3%ADa!5e0!3m2!1sen!2spe!4v1511825438162" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row text-center">
+            <h5>© 2017 Universidad Católica de Santa María. Todos los derechos reservados. UCSM</h5>
+        </div>
     </footer>
 </body>
+
 </html>
 <?php }} ?>
