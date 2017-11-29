@@ -323,9 +323,9 @@ function fxString($p_cCadena, $p_nLength) {
 }
 
 function fxInitSession() {
-    // OJOFPM
-   if (!(isset($_SESSION["GCNOMBRE"]) and isset($_SESSION["GCUNIACA"]))) {
-      return false;
+   ///if (!(isset($_SESSION["GCNOMBRE"]) and isset($_SESSION["GCUNIACA"]))) {  ////// FALTA ARREGLAR EL PŔOCEDIMIENTO ALMACENADO
+if (!(isset($_SESSION["GCNOMBRE"]) )) {      
+    return false;
    }
    return true;
 }

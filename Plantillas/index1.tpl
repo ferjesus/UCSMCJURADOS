@@ -46,7 +46,11 @@ and open the template in the editor.
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
+<<<<<<< Updated upstream
                 <a href="../Mjur1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
+=======
+                <a href="Mjur1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
+>>>>>>> Stashed changes
             </div>
             <div class="col-sm-4"></div>
         </div>
