@@ -1,20 +1,20 @@
+
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="Plantillas/styles.css">
-    <title>Universidad Católica de Santa María</title>
-    <script src="JS/java.js"></script>
-</head>
+   <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Universidad Católica de Santa María</title>
+        <link rel="stylesheet" type="text/css" href="Plantillas/styles.css" media="screen">
+         <script src="JS/java.js"></script>
+   </head>
 <body>
+   
+    <!--<header>
+        <div id="header"></div>
+    </header>--> 
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -34,39 +34,40 @@ and open the template in the editor.
                     <li><a href="Mjur1140.php">Anulacion de Matricula</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span>   Cerrar Sesion</a></li>
+                  <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
                 </ul>
               </div>
             </div>
         </nav>
        <div class="jumbotron text-center">
-          <h1>Modulo de Cursos por Jurados</h1>
+          <h1>Anulacion de Matricula</h1>
+          <p id="NombreAlumno">Nombre del Alumno</p>
        </div>
     </header>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                <a href="Mjur1110.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Matricula de Cursos por Jurado</button></a>
+    <div class="container">
+        <form action="Mjur1140.php" method="post">
+           
+            <div class="row">
+                <div class="jumbotron text-center">
+                        <h3>Matriculas Vigentes</h3>
+                </div>
             </div>
-            <div class="col-sm-4"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                <a href="Mjur1120.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Convalidacion</button></a>
+            <div class="row">
+                <div class="col-sm-0 col-md-4"></div>
+                <div class="col-sm-10 col-md-4">               
+                   <select class='form-control dropxd' name='paData[CIDCARG]'>
+                      {foreach from = $saCursos item = i}  
+                         <option value='{$i[0]}'>{$i[5]} </option>
+                      {/foreach}  
+                   </select>
+                </div>
+                <div class="col-sm-0 col-md-4"></div>
             </div>
-            <div class="col-sm-4"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                <a href="Mjur1140.php"> <button type="button" class="btn btn-primary btn-lg btn btn-success">Anular una Matricula Vigente</button></a>
+            <div class="row text-center">
+                <button type="submit" class="btn btn-success dropxd"  name="Boton1" value="Matricularse" title="Matricularse">Anular Matricula</button>
             </div>
-            <div class="col-sm-4"></div>
-        </div>
+        </form>
     </div>
-    <div class="row"></div>
     <footer>
         <div class="row">
             <div class="col-sm-4">
