@@ -9,7 +9,7 @@
       fxHeader("index.php");
       fxAlert('Inicie Sesión');
    } elseif (@$_REQUEST['Boton1'] == 'Convalidar') {
-      fxConvalidar();
+      fxMatricular();
    } elseif (@$_REQUEST['Boton'] == 'Salir') {
       fxHeader("index.php");
    } elseif (@$_REQUEST['Boton'] == 'Enviar') {
@@ -54,16 +54,13 @@
       fxAlert( 'SIII');
    }
    
-<<<<<<< HEAD
    function fxMatricular() {
-=======
-   function fxConvalidar() {
        
->>>>>>> c896f64e42da05e8084fd950a6201b2f78800113
       $laData = $_REQUEST['paData']; 
-      $lo = new CConvalida();
+      $laData['CCODALU'] = $_SESSION['GCCOALU'] ;
+      $lo = new CMatricula();
       $lo->paData = $laData;
-      $llOk = $lo->omConvalidar();
+      $llOk = $lo->omMatricular();
       if (!$llOk) {
          fxScreen();
          fxAlert($lo->pcError);
@@ -83,6 +80,6 @@
       global $loSmarty;
       $loSmarty->assign('saDatos', $_SESSION['paDatos']);
       $loSmarty->assign('scBehavior', '2');
-      $loSmarty->display('Plantillas/App1110.tpl');
+      $loSmarty->display('Plantillas/Mjur1140.tpl');
    }
  
