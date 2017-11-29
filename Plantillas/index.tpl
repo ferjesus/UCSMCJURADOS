@@ -6,7 +6,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <title>Universidad Católica de Santa María</title>
-      <link rel="stylesheet" href="./styles.css">
+      <link rel="stylesheet" href="Plantillas/styles.css">
    </head>
 <body>
 <header>
@@ -42,7 +42,7 @@
 </div>
 </body>
 <footer class="text-center">
-    <h5>UCSM</h5>
+    <h4>UCSM</h4>
 </footer>
 
 </html>

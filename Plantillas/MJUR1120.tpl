@@ -8,7 +8,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <title>Universidad Católica de Santa María</title>
         <link rel="stylesheet" type="text/css" href="Plantillas/styles.css" media="screen">
-        <script src="./java.js"></script>
+        <script src="JS/java.js"></script>
         <!--<script>
             $(document).ready(function () {
               $('.headerMenu').load('./header.html');
@@ -36,9 +36,10 @@
                     <li class="active"><a href="index1.php">Inicio</a></li>
                     <li><a href="Mjur1110.php">Matricularse</a></li>
                     <li><a href="Mjur1120.php">Convalidacion</a></li>
+                    <li><a href="Mjur1140.php">Anulacion de Matricula</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="Mjur1130.php"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
+                  <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
                 </ul>
               </div>
             </div>
@@ -49,11 +50,11 @@
        </div>
     </header>
     <div class="container">
-<<<<<<< HEAD
+
         <form action="MJUR1120.php" method="post">
-=======
+
         <form action="Mjur1120.php" method="post">
->>>>>>> fd3597c92fdad6e175a989e93596ce5a656ff965
+
             <div class= "form-group text-center">
                 <div class="row">
                     <div class="jumbotron text-center">

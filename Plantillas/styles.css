@@ -10,12 +10,12 @@ body {
   margin-bottom: 370px;
 }
 footer {
-  background-color: grey;
+  background-color: #FFA000;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 370px;
-  color: white;
+  color: grey;
 }
 label{
     margin:10px 0px;
