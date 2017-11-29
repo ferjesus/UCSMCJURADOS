@@ -9,7 +9,7 @@
    if (!fxInitSession()) {
       fxHeader("index.php");
       fxAlert('Inicie Sesión');
-   } elseif (@$_REQUEST['Boton1'] == 'Matricularse') {
+   } elseif (@$_REQUEST['Boton1'] == 'Convalidar') {
       fxMatricular();
    } elseif (@$_REQUEST['Boton'] == 'Salir') {
       fxHeader("index.php");

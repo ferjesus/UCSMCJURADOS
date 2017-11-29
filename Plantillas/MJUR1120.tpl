@@ -49,7 +49,7 @@
        </div>
     </header>
     <div class="container">
-        <form action="MJUR1110.php" method="post">
+        <form action="Mjur1120.php" method="post">
             <div class= "form-group text-center">
                 <div class="row">
                     <div class="jumbotron text-center">
@@ -80,7 +80,7 @@
                     <div class="col-sm-0 col-md-4"></div>
                 </div>
                 <div class="row">
-                    <button type="submit" class="btn btn-success dropxd"  name="Boton1" value="Matricularse" title="Matricularse">Matricularse</button>
+                    <button type="submit" class="btn btn-success dropxd"  name="Boton1" value="Convalidar" title="Convalidar">Convalidar</button>
                 </div>
             </div>
         </form>
