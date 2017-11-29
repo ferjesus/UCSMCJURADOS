@@ -30,7 +30,7 @@ class CConvalida extends CBase {
    protected function mxConvalidar($p_oSql) {
       $lcJson = json_encode($this->paData);
       $lcSql = "SELECT F_CONVALIDA('$lcJson')";
-      print_r($lcSql);
+     // print_r($lcSql);
       $RS = $p_oSql->omExec($lcSql);
       $laFila = $p_oSql->fetch($RS);
       $laFila[0] = (!$laFila[0]) ? '{"ERROR": "ERROR DE EJECUCION DE BASE DE DATOS"}' : $laFila[0];

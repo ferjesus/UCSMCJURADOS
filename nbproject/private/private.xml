@@ -3,16 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< Updated upstream
-            <file>file:/Users/morochoman/Documents/GitHub/UCSMCJURADOS/Plantillas/MJUR1110.tpl</file>
-            <file>file:/Users/morochoman/Documents/GitHub/UCSMCJURADOS/Plantillas/header.html</file>
-            <file>file:/Users/morochoman/Documents/GitHub/UCSMCJURADOS/Plantillas/index1.tpl</file>
-            <file>file:/Users/morochoman/Documents/GitHub/UCSMCJURADOS/Plantillas/styles.css</file>
-=======
             <file>file:/var/www/html/UCSMCJURADOS/index1.php</file>
             <file>file:/var/www/html/UCSMCJURADOS/index.php</file>
+            <file>file:/var/www/html/UCSMCJURADOS/Mjur1140.php</file>
+            <file>file:/var/www/html/UCSMCJURADOS/Plantillas/Mjur1140.tpl</file>
+            <file>file:/var/www/html/UCSMCJURADOS/Clases/CConvalida.php</file>
+            <file>file:/var/www/html/UCSMCJURADOS/Plantillas/MJUR1120.tpl</file>
             <file>file:/var/www/html/UCSMCJURADOS/Mjur1110.php</file>
->>>>>>> Stashed changes
+            <file>file:/var/www/html/UCSMCJURADOS/Mjur1120.php</file>
         </group>
     </open-files>
 </project-private>

@@ -49,7 +49,7 @@
    function fxMatricular() {
        
       $laData = $_REQUEST['paData']; 
-      $laData['CCODALU'] = $_SESSION['GCCOALU'] ;
+      $laData['CCODALU'] = $_SESSION['GCCODALU'] ;
       $lo = new CMatricula();
       $lo->paData = $laData;
       $llOk = $lo->omMatricular();

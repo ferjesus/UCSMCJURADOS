@@ -51,10 +51,10 @@
     </header>
     <div class="container">
 
-        <form action="MJUR1120.php" method="post">
+        <form action="Mjur1120.php" method="post">
         <form action="Mjur1120.php" method="post">
 
-        <form action="MJUR1120.php" method="post">
+        <form action="Mjur1120.php" method="post">
 
         <form action="Mjur1120.php" method="post">
 

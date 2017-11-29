@@ -12,9 +12,7 @@
    </head>
 <body>
    
-    <!--<header>
-        <div id="header"></div>
-    </header>--> 
+  
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
