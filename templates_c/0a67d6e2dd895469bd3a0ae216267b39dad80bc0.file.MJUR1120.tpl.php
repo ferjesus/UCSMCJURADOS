@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 19:17:18
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-30 04:11:03
          compiled from "Plantillas\MJUR1120.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:161015a1ef02f43b1d1-79622011%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0a67d6e2dd895469bd3a0ae216267b39dad80bc0' => 
     array (
       0 => 'Plantillas\\MJUR1120.tpl',
-      1 => 1511979437,
+      1 => 1512009594,
       2 => 'file',
     ),
   ),
@@ -78,10 +78,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </header>
     <div class="container">
 
-        <form action="MJUR1120.php" method="post">
+        <form action="Mjur1120.php" method="post">
         <form action="Mjur1120.php" method="post">
 
-        <form action="MJUR1120.php" method="post">
+        <form action="Mjur1120.php" method="post">
 
         <form action="Mjur1120.php" method="post">
 

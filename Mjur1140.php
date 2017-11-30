@@ -8,7 +8,7 @@
       fxHeader("index.php");
       fxAlert('Inicie Sesión');
    } elseif (@$_REQUEST['Boton1'] == 'Matricularse') {
-      fxMatricular();
+      fxAnular();
    } elseif (@$_REQUEST['Boton'] == 'Salir') {
       fxHeader("index.php");
    } elseif (@$_REQUEST['Boton'] == 'Enviar') {
@@ -18,10 +18,10 @@
    }
    ///WASdASdASD
   function fxInit() {
-      $laData['CUNIACA'] = $_SESSION['GCUNIACA'] ;
+      $laData['CCODALU'] = $_SESSION['GCCODALU'] ;
       $lo = new CMatricula();
       $lo->paData = $laData;
-      $llOk = $lo->omTraerCursos();
+      $llOk = $lo->omTraerMatriculas();
       if (!$llOk) {
          fxHeader("index1.php", $lo->pcError);
          return;
@@ -45,21 +45,21 @@
       $_SESSION['paData'] = $lo->paData;
    }
    
-   function fxMatricular() {
+   function fxAnular() {
        
       $laData = $_REQUEST['paData']; 
       $laData['CCODALU'] = $_SESSION['GCCODALU'] ;
       $lo = new CMatricula();
       $lo->paData = $laData;
-      $llOk = $lo->omMatricular();
+      $llOk = $lo->omAnular();
       if (!$llOk) {
          fxScreen();
          fxAlert($lo->pcError);
          return;
       }
       $_SESSION['paData'] = $lo->paData;
-      fxAlert('GRABACION CONFORME');
-      fxScreen();
+      fxAlert('MATRICULA ANULADA');
+      fxScreen3();
       
    }  
    
@@ -73,4 +73,7 @@
       $loSmarty->assign('scBehavior', '2');
       $loSmarty->display('Plantillas/App1110.tpl');
    }
- 
+    function fxScreen3() {
+      global $loSmarty;
+      $loSmarty->display('Plantillas/index1.tpl');
+   }

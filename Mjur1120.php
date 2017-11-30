@@ -66,7 +66,7 @@
          return;
       }
       $_SESSION['paData'] = $lo->paData;
-      fxAlert('GRABACION CONFORME');
+      fxAlert('SOLICITUD DE CONVALIDACION ENVIADA');
       fxScreen();
       
    }  
