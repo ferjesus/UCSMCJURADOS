@@ -34,6 +34,7 @@
       global $loSmarty;
       $loSmarty->assign('saCursos', $_SESSION['paCursos']);
       $loSmarty->assign('scBehavior', '0');
+      $loSmarty->assign('saDatos', $_SESSION);
       $loSmarty->display('Plantillas/Mjur1140.tpl');
    }
    

@@ -33,8 +33,11 @@
    
    function fxScreen() {
       global $loSmarty;
+      $laData =  $_SESSION; 
+      $loSmarty->assign('saData', $laData);
       $loSmarty->assign('saCursos', $_SESSION['paCursos']);
       $loSmarty->assign('scBehavior', '0');
+      $loSmarty->assign('saDatos', $_SESSION);
       $loSmarty->display('Plantillas/Mjur1110.tpl');
    }
    

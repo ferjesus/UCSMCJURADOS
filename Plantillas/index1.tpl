@@ -34,6 +34,7 @@ and open the template in the editor.
                     <li><a href="Mjur1140.php">Anulacion de Matricula</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                     <li><a> <font color="white">Bienvenido, {$saDatos['GCNOMBRE']}</font> </a></li> 
                   <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span>   Cerrar Sesion</a></li>
                 </ul>
               </div>

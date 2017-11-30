@@ -42,6 +42,7 @@
       $loSmarty->assign('saCursos', $_SESSION['paCursos']);
       $loSmarty->assign('saCargas', $_SESSION['paCargas']);
       $loSmarty->assign('scBehavior', '0');
+      $loSmarty->assign('saDatos', $_SESSION);
       $loSmarty->display('Plantillas/MJUR1120.tpl');
    }
    

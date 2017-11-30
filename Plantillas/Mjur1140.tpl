@@ -26,12 +26,13 @@
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index1.php">Inicio</a></li>
+                    <li><a href="index1.php">Inicio</a></li>
                     <li><a href="Mjur1110.php">Matricularse</a></li>
                     <li><a href="Mjur1120.php">Convalidacion</a></li>
-                    <li><a href="Mjur1140.php">Anulacion de Matricula</a></li>
+                    <li class="active"><a href="Mjur1140.php">Anulacion de Matricula</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                  <li><a> <font color="white">Bienvenido, {$saDatos['GCNOMBRE']}</font> </a></li> 
                   <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
                 </ul>
               </div>

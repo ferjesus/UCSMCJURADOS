@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-29 18:36:38
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-30 18:08:02
          compiled from "Plantillas\index1.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:128795a1ef02630db84-12875030%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dbf3f05f78ac529237b1a116192852362cf54038' => 
     array (
       0 => 'Plantillas\\index1.tpl',
-      1 => 1511976740,
+      1 => 1512061680,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.8',
   'unifunc' => 'content_5a1ef02632b059_27541623',
+  'variables' => 
+  array (
+    'saDatos' => 0,
+  ),
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5a1ef02632b059_27541623')) {function content_5a1ef02632b059_27541623($_smarty_tpl) {?><!DOCTYPE html>
 <!--
@@ -55,6 +59,8 @@ and open the template in the editor.
                     <li><a href="Mjur1140.php">Anulacion de Matricula</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                     <li><a> <font color="white">Bienvenido, <?php echo $_smarty_tpl->tpl_vars['saDatos']->value['GCNOMBRE'];?>
+</font> </a></li> 
                   <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span>   Cerrar Sesion</a></li>
                 </ul>
               </div>

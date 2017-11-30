@@ -25,7 +25,7 @@
    function fxScreen() {
        
       global $loSmarty;
-      $loSmarty->assign('scBehavior', '0');
+      $loSmarty->assign('saDatos', $_SESSION);
       $loSmarty->display('Plantillas/index1.tpl');
    }
      

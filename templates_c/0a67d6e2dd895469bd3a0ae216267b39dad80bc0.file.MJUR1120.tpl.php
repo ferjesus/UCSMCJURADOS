@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-30 04:11:03
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-30 18:09:57
          compiled from "Plantillas\MJUR1120.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:161015a1ef02f43b1d1-79622011%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0a67d6e2dd895469bd3a0ae216267b39dad80bc0' => 
     array (
       0 => 'Plantillas\\MJUR1120.tpl',
-      1 => 1512009594,
+      1 => 1512061787,
       2 => 'file',
     ),
   ),
@@ -19,6 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5a1ef02f476a88_73959874',
   'variables' => 
   array (
+    'saDatos' => 0,
     'saCursos' => 0,
     'i' => 0,
     'saCargas' => 0,
@@ -60,12 +61,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index1.php">Inicio</a></li>
+                    <li><a href="index1.php">Inicio</a></li>
                     <li><a href="Mjur1110.php">Matricularse</a></li>
-                    <li><a href="Mjur1120.php">Convalidacion</a></li>
+                    <li class="active"><a href="Mjur1120.php">Convalidacion</a></li>
                     <li><a href="Mjur1140.php">Anulacion de Matricula</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                  <li><a> <font color="white">Bienvenido, <?php echo $_smarty_tpl->tpl_vars['saDatos']->value['GCNOMBRE'];?>
+</font> </a></li> 
                   <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
                 </ul>
               </div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2017-11-30 03:40:02
+<?php /* Smarty version Smarty-3.1.8, created on 2017-11-30 18:09:58
          compiled from "Plantillas\Mjur1140.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:109935a1f6f829d7a27-31966922%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7d6f51433d38bad3da07a2009a6428ba5637a9b8' => 
     array (
       0 => 'Plantillas\\Mjur1140.tpl',
-      1 => 1512009594,
+      1 => 1512061794,
       2 => 'file',
     ),
   ),
@@ -15,14 +15,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.8',
+  'unifunc' => 'content_5a1f6f82cff200_47401147',
   'variables' => 
   array (
+    'saDatos' => 0,
     'saCursos' => 0,
     'i' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_5a1f6f82cff200_47401147',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5a1f6f82cff200_47401147')) {function content_5a1f6f82cff200_47401147($_smarty_tpl) {?>
 <!DOCTYPE html>
@@ -52,12 +53,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index1.php">Inicio</a></li>
+                    <li><a href="index1.php">Inicio</a></li>
                     <li><a href="Mjur1110.php">Matricularse</a></li>
                     <li><a href="Mjur1120.php">Convalidacion</a></li>
-                    <li><a href="Mjur1140.php">Anulacion de Matricula</a></li>
+                    <li class="active"><a href="Mjur1140.php">Anulacion de Matricula</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                  <li><a> <font color="white">Bienvenido, <?php echo $_smarty_tpl->tpl_vars['saDatos']->value['GCNOMBRE'];?>
+</font> </a></li> 
                   <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span>  Cerrar Sesion</a></li>
                 </ul>
               </div>
